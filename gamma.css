@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root {
+    --primary-color: #2196f3;
+    --primary-color-dark: #0784e8
+}
+
+Page {
+    font-family: sans-serif;
+    letter-spacing: -.003em;
+    font-size: 20px;
+    display: flex;
+    margin: 8px;
+}
+
+Heading {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* outline type */
+Button[_type="outline"] {
+    background: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+Button:hover[_type="outline"] {
+    background-color: #ebebeb;
+    border: 2px solid var(--primary-color-dark);
+    color: var(--primary-color-dark);
+
+}
+Button:focus[_type="outline"],Button:active[_type="outline"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid white;
+    transition: none;
+}
+
+/* text type */
+Button[_type="text"] {
+    background: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 1s;
+}
+Button:focus[_type="text"],Button:active[_type="text"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid white;
+    transition: none;
+}
+
+/* default type */
+Button {
+    background: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 1s;
+}
+Button:focus,Button:active {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid white;
+    transition: none;
+}
+
+/* box type */
+Button[_type="box"] {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+Button:hover[_type="box"] {
+    background-color: var(--primary-color-dark);
+    border: 2px solid white;
+    color: white
+
+}
+Button:focus[_type="box"],Button:active[_type="box"] {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: none;
+}
+
+Button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
